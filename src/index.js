@@ -50,4 +50,4 @@ router.get("/pastMessages", (req, res) => {
 
 app.use("/", router);
 
-app.listen(9003, () => console.log("Example app listening on port 9001!"));
+app.listen(9001, () => console.log("Example app listening on port 9001!"));
