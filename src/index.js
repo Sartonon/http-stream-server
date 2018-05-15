@@ -32,10 +32,10 @@ router.get("/messages", (req, res) => {
   }
   messageBus.on("message", onMessage);
 
-  // setTimeout(() => {
-  //   messageBus.removeListener("message", onMessage);
-  //   res.end();
-  // }, 20000);
+  setTimeout(() => {
+    messageBus.removeListener("message", onMessage);
+    res.end();
+  }, 60000);
 });
 
 router.post("/messages", (req, res) => {
